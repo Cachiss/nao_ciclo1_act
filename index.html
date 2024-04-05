@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Caroline - Curso</title>
+
+
+
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F3FF;
+        }
+        .button{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 2%;
+        }
+        .brand > p{
+            font-size: 40px ;
+            color: #52A65A ;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .helper-text{
+            color:  gray;
+        }
+        main{
+            padding-top: 3em;
+        }
+        h1{
+            font-size: 4em;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+        p,button,li{
+            font-size: 1.18em;
+        }
+        .bi{
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            button{
+                width: 100% !important;
+                order: 2 !important;
+            }
+            #menu-items > li{
+                display: none;
+            }
+            #img{
+                margin-top: 4em;
+                position: relative;
+                top: 20%;
+            }
+            #img,#img>div, #img>div>div, #img>div>div>div{
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+                display: block !important;
+                max-width: max-content;
+            }
+            h1{
+                font-size: 3em;
+            }
+            .bi{
+                display: block;
+                font-size: 3em;
+            }
+            .content, .col-6, .col{
+                display: block !important;
+                width: 100% !important;
+            }
+            .info-course >div{
+                width: 100% !important;
+            }
+
+        p,button,li{
+            font-size: 1.5em;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="">
+            <nav class="d-flex justify-content-between">
+                <div class="brand">
+                    <p>Caroline</p>
+                </div>
+
+                <ul id="menu-items" class="d-flex justify-content-center gap-5 list-unstyled align-items-center">
+                    <li>Inicio</li>
+                    <li>Sobre Nosotros</li>
+                    <li>Contacto</li>
+                </ul>
+                <i class="bi bi-list"></i>
+            </nav>
+        </header>
+
+
+        <main>
+             <div class="row content">
+                <div class="col-6">
+                 
+                     <h1 class="">Aprende a manejar tus finanzas</h1>
+                     <p class="helper-text">
+                        Con este curso, sabrás como se dirigen tus finanzas  en tu nuevo emprendimiento.
+                     </p>
+
+                     <div class="row mt-5 info-course">
+                        <div class="col-4">
+                            <span class="fw-bold">Instructor</span>
+                            <p>Caroline</p>
+                        </div>
+                        <div class="col-4">
+                            <span class="fw-bold">Duración</span>
+                            <p>3 semanas</p>
+                        </div>
+                        <div class="col-4">
+                            <span class="fw-bold">Tiempo </span>
+                            <p>3-4 horas por semana</p>
+                        </div>
+
+                        <button class="button mt-5">
+                            Inscribirme
+                        </button>
+                     </div>
+                </div>
+
+
+                <div class="col ms-5" id="img">
+                    <div class="row d-flex justify-content-end">
+                    
+                        <div class="col-10">
+                            <div class="d-flex justify-content-end">
+                            <img src="./assets/image.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+             </div>
+
+
+        </main>
+    </div>
+</body>
+</html>
