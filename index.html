@@ -93,17 +93,20 @@
 <body>
     <div class="container">
         <header class="">
-            <nav class="d-flex justify-content-between">
+            <nav class="d-flex justify-content-between navbar navbar-expand-lg">
                 <div class="brand">
                     <p>Caroline</p>
                 </div>
-
-                <ul id="menu-items" class="d-flex justify-content-center gap-5 list-unstyled align-items-center">
-                    <li>Inicio</li>
-                    <li>Sobre Nosotros</li>
-                    <li>Contacto</li>
-                </ul>
-                <i class="bi bi-list"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end gap-3" id="navbarNav">
+                    <ul id="menu-items" class="navbar-nav flex">
+                        <li class="nav-item me-4">Inicio</li>
+                        <li class="nav-item me-4">Sobre Nosotros</li>
+                        <li class="nav-item">Contacto</li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
